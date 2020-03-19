@@ -475,14 +475,16 @@ span.number span:first-child { top: -16px; }
 span.number span:last-child { top: 97%; }
 
 /*MY INTERESTS*/
-.interests li { float: left; display: inline-block; padding: 50px 15px; width: 15.44%; text-align: center; margin-right: 15px; background: #fff; border: 1px solid #eee; -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05); box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05); }
+.interests li { 
+  /* float: left;  */
+  display: inline-block; padding: 50px 15px; width: 15.44%; text-align: center; margin-right: 15px; background: #fff; border: 1px solid #eee; -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05); box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05); }
 .interests li i { font-size: 34px; color: #29576e; margin-bottom: 15px; }
 .interests li h6 { font-size: 18px; font-weight: 600; }
 .interests li:last-child { margin-right: 0; }
 
 /*MY skills*/
 .iq-our-skills { position: relative; }
-.iq-our-skills:before { background: rgba(0, 0, 0, 0.9); content: ""; height: 100%; left: 0; opacity: 0.8; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; position: absolute; top: 0; width: 100%; }
+.iq-our-skills:before { background: rgba(0, 0, 0, 0.9); content: ""; height: 100%; left: 0; opacity: 0.8;  position: absolute; top: 0; width: 100%; }
 .iq-progress-bar-text { margin-bottom: 10px; }
 .iq-progress-bar-text span { float: right }
 .iq-progress-bar { background: #666 none repeat scroll 0 0; box-shadow: 0 0 0; height: 5px; margin: 0 0 30px; position: relative; width: 100%; }
