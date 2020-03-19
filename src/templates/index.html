@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-    {% block content %}
-    
+{% block content %}
+
     <!-- Begin Content -->
     <div class="main-container">
         <!-- About us -->
@@ -10,6 +10,9 @@
                 <div class="row row-eq-height h-100">
                     <div class="col-md-3 purple-bg">
                         <div class="iq-objects">
+<!-- BACKGROUND PARTICLES -->   
+        <div id="particles-js"></div>
+
                             <span class="iq-objects-01">
                                     <img class="img-fluid" src="{% static 'images/01.png' %}" alt="drive">
                                 </span>
@@ -41,4 +44,4 @@
     </div>
     <!-- Main Content End -->
 
-    {% endblock content %}
+{% endblock content %}
