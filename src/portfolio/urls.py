@@ -3,7 +3,9 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from .views import index, about, contact, portfolio, resume, services
+from .views import index, contact, portfolio, services
+from about.views import about
+from resume.views import resume
 
 urlpatterns = [
     path('admin/', admin.site.urls),

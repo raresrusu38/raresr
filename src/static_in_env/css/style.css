@@ -489,7 +489,8 @@ span.number span:last-child { top: 97%; }
 .iq-progress-bar-text span { float: right }
 .iq-progress-bar { background: #666 none repeat scroll 0 0; box-shadow: 0 0 0; height: 5px; margin: 0 0 30px; position: relative; width: 100%; }
 .iq-progress-bar > span { background: #f58128 none repeat scroll 0 0; display: block; height: 100%; width: 0; }
-
+/* My experience */
+a.more {margin-top: 10px;padding: 2px 4px;}
 /*---------------------------------------------------------------------
                              Footer
 ---------------------------------------------------------------------*/
