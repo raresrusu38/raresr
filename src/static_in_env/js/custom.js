@@ -134,7 +134,7 @@ $(document).ready(function() {
     --------------------------*/
     var win = $(window),
         foo = $('#typer');
-    foo.typer(['<h1><span class="iq-font-purple">Web</span> Developer</h1>', '<h1>Web <span class="iq-font-purple">Designer</span></h1>', '<h1><span class="iq-font-purple">Frontend</span> Developer</h1>']);
+    foo.typer(['<h2><span class="iq-font-purple">Web</span> Developer</h2>', '<h2>Tool <span class="iq-font-purple">Developer & Support</span></h2>']);
 
 
 
