@@ -16,23 +16,23 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto w-100 justify-content-end">
-                            <li class="nav-item active">
-                                <a class="nav-link" data-type="page-transition" href="/">Home</a>
+                            <li class="nav-item">
+                                <a {% if request.path == '/' %}class="active nav-link" {% else %}class="nav-link"{% endif %} data-type="page-transition" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-type="page-transition" href="/about">About me</a>
+                                <a {% if request.path == '/about/' %}class="active nav-link" {% else %}class="nav-link"{% endif %} data-type="page-transition" href="/about">About me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-type="page-transition" href="/resume">resume</a>
+                                <a {% if request.path == '/resume/' %}class="active nav-link" {% else %}class="nav-link"{% endif %} data-type="page-transition" href="/resume">resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-type="page-transition" href="/services">services</a>
+                                <a {% if request.path == '/services/' %}class="active nav-link" {% else %}class="nav-link"{% endif %} data-type="page-transition" href="/services">services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-type="page-transition" href="/portfolio">portfolio</a>
+                                <a {% if request.path == '/portfolio/' %}class="active nav-link" {% else %}class="nav-link"{% endif %} data-type="page-transition" href="/portfolio">portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-type="page-transition" href="/contact">contact</a>
+                                <a {% if request.path == '/contact/' %}class="active nav-link" {% else %}class="nav-link"{% endif %} data-type="page-transition" href="/contact">contact</a>
                             </li>
                         </ul>
                     </div>

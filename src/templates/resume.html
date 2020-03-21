@@ -58,7 +58,11 @@
                                                 <div>
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
-                                                    <div class="info"><a class="button more iq-mt-30" href="#">View More</a></div>
+                                                    <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
+                                                        
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                        
+                                                    </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
                                             {% endfor %}
@@ -67,7 +71,9 @@
                                                 <div>
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
-                                                    <div class="info"><a class="button more iq-mt-30" href="#">View More</a></div>
+                                                    <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                    </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
                                             {% endfor %}
@@ -76,7 +82,9 @@
                                                 <div>
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
-                                                    <div class="info"><a class="button more iq-mt-30" href="#">View More</a></div>
+                                                    <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                    </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
                                             {% endfor %}
@@ -85,7 +93,9 @@
                                                 <div>
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
-                                                    <div class="info"><a class="button more iq-mt-30" href="#">View More</a></div>
+                                                    <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
+                                                       <p> <a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                    </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
                                             {% endfor %}
@@ -94,7 +104,9 @@
                                                 <div>
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
-                                                    <div class="info"><a class="button more iq-mt-30" href="#">View More</a></div>
+                                                    <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                    </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
                                             {% endfor %}
@@ -103,7 +115,9 @@
                                                 <div>
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
-                                                    <div class="info"><a class="button more iq-mt-30" href="#">View More</a></div>
+                                                    <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                    </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
                                             {% endfor %}
@@ -112,7 +126,9 @@
                                                 <div>
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
-                                                    <div class="info"><a class="button more iq-mt-30" href="#">View More</a></div>
+                                                    <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                    </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
                                             {% endfor %}
@@ -130,16 +146,12 @@
                                                 <h6>Music</h6>
                                             </li>
                                             <li>
-                                                <i class="fa fa-file-video-o" aria-hidden="true"></i>
-                                                <h6>Watch Movies</h6>
+                                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                                                <h6>Programing</h6>
                                             </li>
                                             <li>
-                                                <i class="fa fa-picture-o" aria-hidden="true"></i>
-                                                <h6>Photography</h6>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-gamepad" aria-hidden="true"></i>
-                                                <h6>Gaming</h6>
+                                                <i class="fa fa-car" aria-hidden="true"></i>
+                                                <h6>Driving</h6>
                                             </li>
                                             <li>
                                                 <i class="fa fa-plane" aria-hidden="true"></i>
@@ -158,40 +170,38 @@
                                     <div class="col-lg-6 col-md-6 col-md-6">
                                         <div class="skill-content">
                                             <h3 class="title iq-tw-8 iq-mt-0">My Language skills</h3>
-                                            <p class="iq-mb-25">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                            <p class="iq-mb-25"></p>
                                         </div>
+                                        {% for language in language_RO %}
                                         <div class="iq-progress-bar-linear">
-                                            <p class="iq-progress-bar-text iq-font-black">English
-                                                <span>90/100</span>
+                                            <p class="iq-progress-bar-text iq-font-black">{{ language.language }} (native)
+                                                <span>100/100</span>
                                             </p>
                                             <div class="iq-progress-bar">
-                                                <span data-percent="90"></span>
+                                                <span data-percent="100"></span>
                                             </div>
                                         </div>
+                                        {% endfor %}
+                                        {% for language in language_EN %}
                                         <div class="iq-progress-bar-linear iq-font-black">
-                                            <p class="iq-progress-bar-text">French
-                                                <span>75/100</span>
+                                            <p class="iq-progress-bar-text">{{ language.language }}
+                                                <span>60/100</span>
                                             </p>
                                             <div class="iq-progress-bar">
-                                                <span data-percent="75"></span>
+                                                <span data-percent="60"></span>
                                             </div>
                                         </div>
+                                        {% endfor %}
+                                        {% for language in language_ES %}
                                         <div class="iq-progress-bar-linear iq-font-black">
-                                            <p class="iq-progress-bar-text">Russian
-                                                <span>67/100</span>
+                                            <p class="iq-progress-bar-text">{{ language.language }}
+                                                <span>25/100</span>
                                             </p>
                                             <div class="iq-progress-bar">
-                                                <span data-percent="67"></span>
+                                                <span data-percent="25"></span>
                                             </div>
                                         </div>
-                                        <div class="iq-progress-bar-linear iq-font-black iq-mb-0">
-                                            <p class="iq-progress-bar-text">German
-                                                <span>50/100</span>
-                                            </p>
-                                            <div class="iq-progress-bar">
-                                                <span data-percent="50"></span>
-                                            </div>
-                                        </div>
+                                        {% endfor %}
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-md-6">
                                         <div class="skill-content">

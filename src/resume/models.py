@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 class Education(models.Model):
     title                   = models.CharField(max_length=50, blank=True)
@@ -17,6 +18,7 @@ class Education(models.Model):
 class Experience(models.Model):
     title                   = models.CharField(max_length=50, blank=True)
     location                = models.CharField(max_length=50, blank=True)
+    department              = models.CharField(max_length=50, blank=True)
     start_year              = models.PositiveSmallIntegerField(blank=True, null=True)
     stop_year               = models.PositiveSmallIntegerField(blank=True, null=True)
     description             = models.TextField(blank=True)
@@ -28,5 +30,24 @@ class Experience(models.Model):
         verbose_name        = ('Experience')
         verbose_name_plural = ('Experiences')
 
-    
+    def get_absolute_url(self):
+        return reverse('resume-detail', kwargs={
+                'id': self.id,
+            })
+
+LANGUAGE = (
+    ('Romanian', 'Romanian'),
+    ('English', 'English'),
+    ('Spanish', 'Spanish')
+)
+
+class MyLanguageSkills(models.Model):
+    language                = models.CharField(max_length=10, choices=LANGUAGE)
+
+    def __str__(self):
+        return self.language
+
+    class Meta:
+        verbose_name = ('My Language Skills')
+        verbose_name_plural = ('My Languages Skills')
 
