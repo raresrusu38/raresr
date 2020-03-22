@@ -5,7 +5,7 @@ from django.urls import path
 
 from .views import index, contact, portfolio, services
 from about.views import about
-from resume.views import resume, resume_detail
+from resume.views import resume, resume_education_detail, resume_experience_detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -14,7 +14,8 @@ urlpatterns = [
     path('contact/', contact),
     path('portfolio/', portfolio),
     path('resume/', resume),
-    path('resume/experience/<id>/', resume_detail, name='resume-detail'),
+    path('resume/education/<id>/', resume_education_detail, name='resume-education-detail'),
+    path('resume/experience/<id>/', resume_experience_detail, name='resume-experience-detail'),
     path('services/', services),
 ]
 

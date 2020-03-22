@@ -51,3 +51,22 @@ class MyLanguageSkills(models.Model):
         verbose_name = ('My Language Skills')
         verbose_name_plural = ('My Languages Skills')
 
+PROGRAMING = (
+    ('HMTL', 'HTML'),
+    ('CSS', 'CSS'),
+    ('JavaScript/jQuery', 'JavaScript/jQuery'),
+    ('Ajax', 'Ajax'),
+    ('Python/Django', 'Python/Django'),
+    ('Php/CodeIgniter', 'Php/CodeIgniter')
+)
+
+class MyTechnicalSkills(models.Model):
+    programing_language = models.CharField(max_length=20, choices=PROGRAMING)
+
+    def __str__(self):
+        return self.programing_language
+
+    class Meta:
+        verbose_name = ('My Technical Skills')
+        verbose_name_plural = ('My Technical Skills')
+

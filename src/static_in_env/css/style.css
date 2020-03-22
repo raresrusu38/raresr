@@ -503,7 +503,7 @@ a.more {margin-top: 10px;padding: 2px 4px;}
                              Footer
 ---------------------------------------------------------------------*/
 footer { position: fixed; bottom: 0; left: 0; display: inline-block; width: 100%; z-index: 9; }
-footer .footer-copyright { padding: 10px 0 10px 50px; }
+footer .footer-copyright { padding: 10px 0 10px 50px; color: #f58128 !important; font-weight: 900;}
 footer .follow-us { padding: 10px 50px 10px 0; }
 .follow-us li:first-child:after { border-right: 1px solid #333333; }
 .follow-us li, .follow-us li a { font-size: 16px; color: #333333; float: left; margin-left: 10px; font-weight: 600; position: relative; }

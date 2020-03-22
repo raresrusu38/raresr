@@ -35,7 +35,9 @@
                                                 <div>
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
-                                                    <div class="info">{{ obj.description }}</div>
+                                                    <div class="info">{{ obj.description|linebreaks }}
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-education-detail' id=obj.id %}">View More</a></p>
+                                                    </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
                                             {% endfor %}
@@ -44,7 +46,20 @@
                                                 <div>
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
-                                                    <div class="info">{{ obj.description }}</div>
+                                                    <div class="info">{{ obj.description|truncatechars:260|linebreaks }}
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-education-detail' id=obj.id %}">View More</a></p>
+                                                    </div>
+                                                </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
+                                            </li>
+                                            {% endfor %}
+                                            {% for obj in objects_list_edu_three %}
+                                            <li><span></span>
+                                                <div>
+                                                    <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
+                                                    <div class="type iq-font-purple">{{ obj.location }}</div>
+                                                    <div class="info">{{ obj.description|truncatechars:340|linebreaks }}
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-education-detail' id=obj.id %}">View More</a></p>
+                                                    </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
                                             {% endfor %}
@@ -60,7 +75,7 @@
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
                                                     <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
                                                         
-                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-experience-detail' id=obj.id %}">View More</a></p>
                                                         
                                                     </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
@@ -72,7 +87,7 @@
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
                                                     <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
-                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-experience-detail' id=obj.id %}">View More</a></p>
                                                     </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
@@ -83,7 +98,7 @@
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
                                                     <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
-                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-experience-detail' id=obj.id %}">View More</a></p>
                                                     </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
@@ -94,7 +109,7 @@
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
                                                     <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
-                                                       <p> <a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                       <p> <a class="button more iq-mt-30" href="{% url 'resume-experience-detail' id=obj.id %}">View More</a></p>
                                                     </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
@@ -105,7 +120,7 @@
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
                                                     <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
-                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-experience-detail' id=obj.id %}">View More</a></p>
                                                     </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
@@ -116,7 +131,7 @@
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
                                                     <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
-                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-experience-detail' id=obj.id %}">View More</a></p>
                                                     </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
@@ -127,7 +142,7 @@
                                                     <div class="lead iq-tw-6 iq-font-black">{{ obj.title }}</div>
                                                     <div class="type iq-font-purple">{{ obj.location }}</div>
                                                     <div class="info">{{ obj.description|truncatechars:140|linebreaks }}
-                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-detail' id=obj.id %}">View More</a></p>
+                                                        <p><a class="button more iq-mt-30" href="{% url 'resume-experience-detail' id=obj.id %}">View More</a></p>
                                                     </div>
                                                 </div> <span class="number"><span>{{ obj.start_year }}</span> <span>{{ obj.stop_year }}</span></span>
                                             </li>
@@ -206,40 +221,68 @@
                                     <div class="col-lg-6 col-md-6 col-md-6">
                                         <div class="skill-content">
                                             <h3 class="title iq-tw-8 iq-mt-0">My Technical skills</h3>
-                                            <p class="iq-mb-25">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                            <p class="iq-mb-25"></p>
                                         </div>
+                                        {% for progr in progr_one %}
                                         <div class="iq-progress-bar-linear iq-font-black">
-                                            <p class="iq-progress-bar-text">HTML
-                                                <span>98/100</span>
+                                            <p class="iq-progress-bar-text">{{ progr.programing_language }}
+                                                <span>100/100</span>
                                             </p>
                                             <div class="iq-progress-bar">
-                                                <span data-percent="98"></span>
+                                                <span data-percent="100"></span>
                                             </div>
                                         </div>
+                                        {% endfor %}
+                                        {% for progr in progr_two %}
                                         <div class="iq-progress-bar-linear iq-font-black">
-                                            <p class="iq-progress-bar-text">Css
-                                                <span>90/100</span>
+                                            <p class="iq-progress-bar-text">{{ progr.programing_language }}
+                                                <span>100/100</span>
                                             </p>
                                             <div class="iq-progress-bar">
-                                                <span data-percent="90"></span>
+                                                <span data-percent="100"></span>
                                             </div>
                                         </div>
+                                        {% endfor %}
+                                        {% for progr in progr_three %}
                                         <div class="iq-progress-bar-linear iq-font-black">
-                                            <p class="iq-progress-bar-text">Php
-                                                <span>70/100</span>
+                                            <p class="iq-progress-bar-text">{{ progr.programing_language }}
+                                                <span>60/100</span>
                                             </p>
                                             <div class="iq-progress-bar">
-                                                <span data-percent="70"></span>
+                                                <span data-percent="60"></span>
                                             </div>
                                         </div>
+                                        {% endfor %}
+                                        {% for progr in progr_four %}
                                         <div class="iq-progress-bar-linear iq-font-black iq-mb-0">
-                                            <p class="iq-progress-bar-text">Javascript
-                                                <span>85/100</span>
+                                            <p class="iq-progress-bar-text">{{ progr.programing_language }}
+                                                <span>45/100</span>
                                             </p>
                                             <div class="iq-progress-bar">
-                                                <span data-percent="85"></span>
+                                                <span data-percent="45"></span>
                                             </div>
                                         </div>
+                                        {% endfor %}
+                                        {% for progr in progr_five %}
+                                        <div class="iq-progress-bar-linear iq-font-black iq-mb-0">
+                                            <p class="iq-progress-bar-text">{{ progr.programing_language }}
+                                                <span>55/100</span>
+                                            </p>
+                                            <div class="iq-progress-bar">
+                                                <span data-percent="55"></span>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                        {% for progr in progr_seven %}
+                                        <div class="iq-progress-bar-linear iq-font-black iq-mb-0">
+                                            <p class="iq-progress-bar-text">{{ progr.programing_language }}
+                                                <span>35/100</span>
+                                            </p>
+                                            <div class="iq-progress-bar">
+                                                <span data-percent="35"></span>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </div>

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Begin Content -->
+<div class="main-container">
+    <!-- About us -->
+    <section class="iq-resume wrapper">
+        <div class="container-fluid h-100">
+            <div class="row row-eq-height h-100">
+                <div class="col-md-3 purple-bg">
+                    <div class="iq-objects">
+                        <!-- BACKGROUND PARTICLES -->
+                        <div id="particles-js"></div>
+                        <span class="iq-objects-01">
+                            <img class="img-fluid" src="{% static 'images/01.png' %}" alt="drive">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-9 main-content align-self-center">
+                    <div id="boxscroll" class="inner-box">
+                        <div class="resume-deta iq-plr-40">
+                            <div class="row white-bg">
+                                <div class="col-md-12">
+                                    <div class="main-title">
+                                        <small>My Work Experience</small>
+                                        <h1 class="display-4 iq-tw-8 iq-font-purple">Resume</h1>
+                                    </div>
+                                    <div>
+                                    <ul class="education">
+                                        <li><span></span>
+                                            <div>
+                                                <div class="lead iq-tw-6 iq-font-black">{{ edu.title }}</div>
+                                                <div class="type iq-font-purple">{{ edu.location }}</div>
+                                                <div class="type iq-font-purple">{{ edu.department }}</div>
+                                                <div class="info">{{ edu.description|linebreaks }}</div>
+                                            </div> <span class="number"><span>{{ edu.start_year }}</span> <span>{{ edu.stop_year }}</span></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us End -->
+</div>
+<!-- Main Content End -->
+{% endblock content %}

@@ -27,23 +27,25 @@
                                         <h1 class="display-4 iq-tw-8 iq-font-purple">Resume</h1>
                                     </div>
                                     <div>
-                                    <ul class="education">
-                                        <li><span></span>
-                                            <div>
-                                                <div class="lead iq-tw-6 iq-font-black">{{ queryset.title }}</div>
-                                                <div class="type iq-font-purple">{{ queryset.location }}</div>
-                                                <div class="type iq-font-purple">{{ queryset.department }}</div>
-                                                <div class="info">{{ queryset.description|linebreaks }}</div>
-                                            </div> <span class="number"><span>{{ queryset.start_year }}</span> <span>{{ queryset.stop_year }}</span></span>
-                                        </li>
-                                    </ul>
+                                        <ul class="education">
+                                            <li><span></span>
+                                                <div>
+                                                    <div class="lead iq-tw-6 iq-font-black">{{ exp.title }}</div>
+                                                    <div class="type iq-font-purple">{{ exp.location }}</div>
+                                                    <div class="type iq-font-purple">{{ exp.department }}</div>
+                                                    <div class="info">{{ exp.description|linebreaks }}
+                                                    </div>
+                                                </div> <span
+                                                    class="number"><span>{{ exp.start_year }}</span><span>{{ exp.stop_year }}</span></span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- About Us End -->
 </div>
