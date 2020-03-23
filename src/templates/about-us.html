@@ -23,7 +23,7 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="boder-img">
-                                            <img src="{% static 'images/Rares.jpg' %}" class="img-fluid logo" alt="#">
+                                            <img src="{{ qs.thumbnail.url }}" class="img-fluid logo" alt="#">
                                         </div>
                                     </div>
                                     <div class="col-md-8 content-deta">
@@ -31,17 +31,13 @@
                                             <small>Know About Me</small>
                                             <h1 class="display-4 iq-tw-8 iq-font-purple">About Me</h1>
                                         </div>
-                                        <p class="iq-tw-4 iq-mt-10 iq-mb-20">Hello! I’m Rares.  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        <p class="iq-tw-4 iq-mt-10 iq-mb-20">{{ qs.overview|linebreaks }}</p>
                                     <ul class="contact-info">
-                                        <li> <span class="iq-tw-6">Name :</span> devio</li>
-                                        <li> <span class="iq-tw-6">Freelance :</span> Available</li>
-                                        <li> <span class="iq-tw-6">Date of birth :</span> 21-09-1993</li>
-                                        <li> <span class="iq-tw-6">Email :</span> <a href="#">devio@website.com</a></li>
-                                        <li> <span class="iq-tw-6">Phone :</span> (123)-456-7890</li>
-                                        <li> <span class="iq-tw-6">Address :</span> Front Street, Mexico. Us</li>
-                                        <li> <span class="iq-tw-6">Nationality :</span> United States</li>
-                                        <li><span class="iq-tw-6">Gender :</span> Male</li>
-                                        <li><span class="iq-tw-6">Marital Status :</span> Single</li>
+                                        <li> <span class="iq-tw-6">Name :</span> {{ qs.title }}</li>
+                                        <li> <span class="iq-tw-6">Email :</span> <a href="mailto:rares.rusu29@gmail.com">rares.rusu29@gmail.com</a></li>
+                                        <li> <span class="iq-tw-6">Phone :</span> +40 755093055</li>
+                                        <li> <span class="iq-tw-6">Address :</span> Mosnita Noua, Timis</li>
+                                        <li> <span class="iq-tw-6">Nationality :</span> Romanian</li>
                                         <li><span class="iq-tw-6">Work Status :</span> Web Developer</li>
                                     </ul>
                                     <a class="button" href="/resume">resume</a>
