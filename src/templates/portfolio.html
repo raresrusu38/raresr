@@ -10,142 +10,104 @@
                 <div class="row row-eq-height h-100">
                     <div class="col-md-3 purple-bg">
                         <div class="iq-objects">
-                                <!-- BACKGROUND PARTICLES -->   
-                                <div id="particles-js"></div>
-                                <span class="iq-objects-01">
-                                    <img class="img-fluid" src="{% static 'images/01.png' %}" alt="drive">
-                                </span>
-                            </div>
+                            <!-- BACKGROUND PARTICLES -->   
+                            <div id="particles-js"></div>
+                            <span class="iq-objects-01">
+                                <img class="img-fluid" src="{% static 'images/01.png' %}" alt="drive">
+                            </span>
+                        </div>
                     </div>
                     <div class="col-md-9 main-content align-self-center">
                         <div id="boxscroll" class="inner-box">
                             <div class="iq-plr-40">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-title iq-mb-20">
-                                    <small>My Featured Work</small>
-                                    <h1 class="display-4 iq-tw-8 iq-font-purple">My Portfolio</h1>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="main-title iq-mb-20">
+                                                <small>My Featured Work</small>
+                                                <h1 class="display-4 iq-tw-8 iq-font-purple">My Portfolio</h1>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="isotope-filters">
+                                            <button data-filter="" class="active"> View All</button>
+                                            <button data-filter=".django"> {{ qs_one }}</button>
+                                            <button data-filter=".html_css">{{ qs_two }}</button>
+                                            <button data-filter=".Joomla">{{ qs_three }}</button>
+                                            <button data-filter=".Wordpress">{{ qs_four }}</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="isotope popup-gallery full-screen">
+                                            <div class="grid-item django">
+                                                <div class="portfolio-item">
+                                                    <img src="{% static 'images/portfolio/rares-blog.png' %}" class="portfolio-img" alt="Rares Blog">
+                                                    <div class="overlay">
+                                                        <h4>Rares Rusu Blog</h4>
+                                                        <span>personal blog</span>
+                                                        <div class="item-link">
+                                                            <a class="popup-img" href="{% static 'images/portfolio/rares-blog.png' %}"><span class="ti-plus"></span></a>
+                                                            <a href="http://rares-blog.ro/en/" target='_blank'><span class="ti-link"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-item django">
+                                                <div class="portfolio-item">
+                                                    <img src="{% static 'images/portfolio/Rares-Rusu.png' %}" class="portfolio-img" alt="Rares Rusu vCard Resume">
+                                                    <div class="overlay">
+                                                        <h4>Rares Rusu Resume</h4>
+                                                        <span>personal resume and portfolio page</span>
+                                                        <div class="item-link">
+                                                            <a class="popup-img" href="{% static 'images/portfolio/Rares-Rusu.png' %}"><span
+                                                                    class="ti-plus"></span></a>
+                                                            <a href="#" target='_blank'><span class="ti-link"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-item Joomla">
+                                                <div class="portfolio-item">
+                                                    <img src="{% static 'images/portfolio/politia_locala_sect_2_bucuresti.png' %}" class="portfolio-img" alt="Politia LocalaSector 2 Bucurest">
+                                                    <div class="overlay">
+                                                        <h4>Politia Locala Sector 2 Bucuresti</h4>
+                                                        <span>pagina de profil</span>
+                                                        <div class="item-link">
+                                                            <a class="popup-img" href="{% static 'images/portfolio/politia_locala_sect_2_bucuresti.png' %}"><span class="ti-plus"></span></a>
+                                                            <a href="https://www.politialocalas2.ro/" target="_blank"><span class="ti-link"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-item html_css">
+                                                <!-- <div class="portfolio-item">
+                                                    <img src="http://via.placeholder.com/538x380" alt="img04">
+                                                    <div class="overlay">
+                                                        <h4>work item one</h4>
+                                                        <span>jones</span>
+                                                        <div class="item-link">
+                                                            <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
+                                                            <a href="#"><span class="ti-link"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="grid-item Wordpress">
+                                                <!-- <div class="portfolio-item">
+                                                    <img src="http://via.placeholder.com/538x380" alt="img04">
+                                                    <div class="overlay">
+                                                        <h4>work item one</h4>
+                                                        <span>jones</span>
+                                                        <div class="item-link">
+                                                            <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
+                                                            <a href="#"><span class="ti-link"></span></a>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                        </div>
-                        <div class="col-md-12">
-                            <p>{{ qs }}</p>
-                            <div class="isotope-filters">
-                        <button data-filter="" class="active"> View All</button>
-                        <button data-filter=".web-design"> Web Design</button>
-                        <button data-filter=".graphic-design">Graphic Design</button>
-                        <button data-filter=".website-templates">Website Templates </button>
-                    </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="isotope popup-gallery full-screen">
-                <div class="grid-item web-design graphic-design clearfix">
-                    <div class="portfolio-item clearfix">
-                        <img src="http://via.placeholder.com/538x380" alt="img04">
-                        <div class="overlay">
-                            <h4>work item one</h4>
-                            <span>jones</span>
-                            <div class="item-link">
-                                <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
-                                <a href="#"><span class="ti-link"></span></a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item web-design">
-                    <div class="portfolio-item">
-                        <img src="http://via.placeholder.com/538x380" alt="img04">
-                        <div class="overlay">
-                            <h4>work item one</h4>
-                            <span>jones</span>
-                            <div class="item-link">
-                                <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
-                                <a href="#"><span class="ti-link"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item website-templates">
-                    <div class="portfolio-item">
-                        <img src="http://via.placeholder.com/538x380" alt="img04">
-                        <div class="overlay">
-                            <h4>work item one</h4>
-                            <span>jones</span>
-                            <div class="item-link">
-                                <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
-                                <a href="#"><span class="ti-link"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item graphic-design">
-                    <div class="portfolio-item">
-                        <img src="http://via.placeholder.com/538x380" alt="img04">
-                        <div class="overlay">
-                            <h4>work item one</h4>
-                            <span>jones</span>
-                            <div class="item-link">
-                                <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
-                                <a href="#"><span class="ti-link"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item web-design">
-                    <div class="portfolio-item">
-                        <img src="http://via.placeholder.com/538x380" alt="img04">
-                        <div class="overlay">
-                            <h4>work item one</h4>
-                            <span>jones</span>
-                            <div class="item-link">
-                                <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
-                                <a href="#"><span class="ti-link"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="portfolio-item">
-                        <img src="http://via.placeholder.com/538x380" alt="img04">
-                        <div class="overlay">
-                            <h4>work item one</h4>
-                            <span>jones</span>
-                            <div class="item-link">
-                                <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
-                                <a href="#"><span class="ti-link"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item website-templates">
-                    <div class="portfolio-item">
-                        <img src="http://via.placeholder.com/538x380" alt="img04">
-                        <div class="overlay">
-                            <h4>work item one</h4>
-                            <span>jones</span>
-                            <div class="item-link">
-                                <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
-                                <a href="#"><span class="ti-link"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item website-templates">
-                    <div class="portfolio-item">
-                        <img src="http://via.placeholder.com/538x380" alt="img04">
-                        <div class="overlay">
-                            <h4>work item one</h4>
-                            <span>jones</span>
-                            <div class="item-link">
-                                <a class="popup-img" href="http://via.placeholder.com/538x380"><span class="ti-plus"></span></a>
-                                <a href="#"><span class="ti-link"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        </div>
-                    </div>
-                </div>
                         </div>
                     </div>
                 </div>
