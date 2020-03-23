@@ -57,7 +57,7 @@ PROGRAMING = (
     ('JavaScript/jQuery', 'JavaScript/jQuery'),
     ('Ajax', 'Ajax'),
     ('Python/Django', 'Python/Django'),
-    ('Php/CodeIgniter', 'Php/CodeIgniter')
+    ('Joomla/Wordpress', 'Joomla/Wordpress')
 )
 
 class MyTechnicalSkills(models.Model):
