@@ -276,6 +276,16 @@
                                         {% for progr in progr_seven %}
                                         <div class="iq-progress-bar-linear iq-font-black iq-mb-0">
                                             <p class="iq-progress-bar-text">{{ progr.programing_language }}
+                                                <span>65/100</span>
+                                            </p>
+                                            <div class="iq-progress-bar">
+                                                <span data-percent="65"></span>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                        {% for progr in progr_eight %}
+                                        <div class="iq-progress-bar-linear iq-font-black iq-mb-0">
+                                            <p class="iq-progress-bar-text">{{ progr.programing_language }}
                                                 <span>35/100</span>
                                             </p>
                                             <div class="iq-progress-bar">

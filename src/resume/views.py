@@ -25,6 +25,7 @@ def resume(request):
     programing_four         = MyTechnicalSkills.objects.filter(id=4)
     programing_five         = MyTechnicalSkills.objects.filter(id=5)
     programing_seven        = MyTechnicalSkills.objects.filter(id=7)
+    programing_eight        = MyTechnicalSkills.objects.filter(id=8)
 
     context = {
         'objects_list_edu_one'  : queryset_edu_first,
@@ -45,7 +46,8 @@ def resume(request):
         'progr_three'           : programing_three,
         'progr_four'            : programing_four,
         'progr_five'            : programing_five,
-        'progr_seven'           : programing_seven
+        'progr_seven'           : programing_seven,
+        'progr_eight'           : programing_eight
 
     }
     return render(request, 'resume.html', context)

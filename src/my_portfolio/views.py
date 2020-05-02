@@ -8,13 +8,15 @@ def portfolio(request, id=None):
     queryset_two    = get_object_or_404(MyPortfolio, id=2)
     queryset_three  = get_object_or_404(MyPortfolio, id=3)
     queryset_four   = get_object_or_404(MyPortfolio, id=4)
+    queryset_five   = get_object_or_404(MyPortfolio, id=5)
 
 
     context = {
         'qs_one'    : queryset_one,
         'qs_two'    : queryset_two,
         'qs_three'  : queryset_three,
-        'qs_four'   : queryset_four
+        'qs_four'   : queryset_four,
+        'qs_five'   : queryset_five
     }
 
     return render(request, 'portfolio.html', context)
