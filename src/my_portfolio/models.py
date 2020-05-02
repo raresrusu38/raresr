@@ -2,10 +2,11 @@ from django.db import models
 from django.urls import reverse
 
 CATEGORIES = (
-    ('Django', 'Django'),
+    ('Python/Django', 'Python/Django'),
     ('HTML/CSS', 'HTML/CSS'),
     ('Joomla', 'Joomla'),
-    ('Wordpress', 'Wordpress')
+    ('Wordpress', 'Wordpress'),
+    ('PyQt5', 'PyQt5')
 )
 
 class MyPortfolio(models.Model):
